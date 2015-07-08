@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">GPSLogger</string>
+    <string name="app_name">Green Cougar</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="service_name">GPSLoggerService</string>
+    <string name="local_service_started">GPSLoggerService is running</string>
+    <string name="local_service_stopped">GPSLoggerService has stopped</string>
+    <string name="Export">Export KML to SD Card</string>
+    <string name="export_completed">Export Completed</string>
+    <string name="update">Update</string>
+
+
+    <string name="latIMG">Latitude</string>
+    <string name="longIMG">Longitude</string>
+    <string name="speedIMG">Speed</string>
+    <string name="barometerIMG">Barometer</string>
+    <string name="accuracyIMG">Accuracy</string>
+    <string name="altitudeIMG">Altitude</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

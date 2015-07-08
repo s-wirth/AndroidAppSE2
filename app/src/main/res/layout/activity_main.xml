@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:id="@+id/LatAndLong">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:hint="Latitude"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:id="@+id/currentLatitude"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:hint="Longitude"
+                android:textSize="18dp"
+                android:id="@+id/currentLongitude"
+                />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="#EEEEEE"
+            android:background="#414142"
+            android:id="@+id/ButtonUpdate"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ButtonStop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:weightSum="2"
+            android:id="@+id/speedLayout">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/speed"
+                android:layout_weight="1"
+                android:id="@+id/currentSpeedIMG"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22dp"
+                android:id="@+id/currentSpeed"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:weightSum="2"
+            android:id="@+id/accuracyLayout">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/accuracy"
+                android:id="@+id/currentAccuracyIMG"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22dp"
+                android:id="@+id/currentAccuracy"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:id="@+id/barometerLayout"
+            android:layout_below="@+id/accuracyLayout">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/barometer"
+                android:id="@+id/barometerIMG"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22dp"
+                android:id="@+id/currentPressure"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:id="@+id/altitudeLayout"
+            android:layout_below="@+id/barometerLayout">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/altitude"
+                android:id="@+id/currentAltitudeIMG"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22dp"
+                android:id="@+id/currentAltitude"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:weightSum="2"
+            android:id="@+id/referenceAltitudeLayout"
+            android:layout_below="@+id/altitudeLayout">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:id="@+id/refAltitude"
+                android:hint="reference Hight"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"
+                android:background="#BFDE3E"
+                android:layout_weight="0.37"
+                android:text="Enter"
+                android:id="@+id/ButtonAltitude"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Logging"
+            android:background="#BFDE3E"
+            android:layout_weight="1"
+            android:id="@+id/ButtonStart"
+            android:layout_below="@+id/LatAndLong"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Logging"
+            android:background="#C30B25"
+            android:textColor="#EEEEEE"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/ButtonStop"
+            android:layout_below="@+id/LatAndLong" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="2"
+            android:id="@+id/currentTripName"
+            android:layout_below="@+id/referenceAltitudeLayout">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:hint="Current Trip Name:"
+                android:textSize="15dp"
+                android:id="@+id/tripName"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:hint="current name"
+                android:textSize="15dp"
+                android:id="@+id/EditTextTripName"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

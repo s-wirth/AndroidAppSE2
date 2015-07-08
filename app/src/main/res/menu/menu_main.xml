@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:icon="@drawable/greencougar"
+      tools:context="com.sophiewirth.gpslogger.GPSLoggerActivity">
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:icon="@drawable/greencougar"
+          android:orderInCategory="100"
+          android:showAsAction="never"/>
+</menu>
